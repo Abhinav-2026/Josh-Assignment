@@ -114,30 +114,47 @@ document.addEventListener("DOMContentLoaded", function () {
             <button type="submit" class="back-to-menu" style="background-color:#1AC073 ;color:white">Back to Menu</button>
         </div>
     `;
-    
+
     // Append modal to body
     document.body.appendChild(cartModal);
-    
+
+    // Function to disable scrolling
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Function to enable scrolling
+    function enableScroll() {
+        document.body.style.overflow = '';
+    }
+
     // Open modal on cart click
     cart.addEventListener('click', () => {
         cartModal.style.display = 'block';
+        disableScroll();
     });
-    
+
     // Close modal when clicking the close button
     cartModal.querySelector('.close-btn').addEventListener('click', () => {
         cartModal.style.display = 'none';
+        enableScroll();
     });
-    
+
     // Close modal when clicking outside the modal content
     window.addEventListener('click', (event) => {
         if (event.target === cartModal) {
             cartModal.style.display = 'none';
+            enableScroll();
         }
     });
+
+    // Close modal when clicking "Back to Menu"
     cartModal.querySelector('.back-to-menu').addEventListener('click', () => {
         cartModal.style.display = 'none';
+        enableScroll();
     });
 });
+
 
 // Function to handle video controls
 document.addEventListener("DOMContentLoaded", function () {

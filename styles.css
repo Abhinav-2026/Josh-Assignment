@@ -7,9 +7,24 @@
 }
 
 html, body {
-    height: 100%;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
+html, body {
+    height: 100%;
+}
+
+/* #main-content {
+    min-height: calc(100vh - <footer-height>);
+} */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .ab{
     background-color:#1AC073;
     color: white;
@@ -120,6 +135,7 @@ html, body {
     text-align: center;
     position: relative;
     background-color: white;
+    
 }
 
 .food-image {
@@ -236,11 +252,11 @@ html, body {
 /* Cart Modal */
 .cart-modal {
     position: fixed;
-    /* transform: translateX(-50%); */
     width: 600px;
     height: 500px;
-    top: 20px;
-    left: 350px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
     border-radius: 20px;
     display: flex;
@@ -254,9 +270,15 @@ html, body {
     text-align: center;
 }
 
+/* Center content inside the modal */
 .modal-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
 }
+
 
 .modal-content img {
     width: 80px;
