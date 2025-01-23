@@ -1,0 +1,101 @@
+[
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_MqT0asuoIcU-1.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_UxRhrU8fPHQ.png",
+        "name":"Home made pizza",
+        "price":123,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79
+    },
+    {
+       "image":"JTG - FE Home Assignment - Set 1/unsplash_CbNAuxSZTFo.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79 
+    },
+    {
+     "image":"JTG - FE Home Assignment - Set 1/unsplash_Y6OgisiGBjM.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79    
+    },
+    {
+    "image":"JTG - FE Home Assignment - Set 1/unsplash_nP11TkjxJ7s.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79  
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_60nzTP7_hMQ.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79  
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_sejqj6Eaqe8.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79  
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_33GPuoFI7v8.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79  
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_MqT0asuoIcU-1.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79
+    },
+    {
+        "image":"JTG - FE Home Assignment - Set 1/unsplash_UxRhrU8fPHQ.png",
+        "name":"Home made pizza",
+        "price":123,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79
+    },
+    {
+       "image":"JTG - FE Home Assignment - Set 1/unsplash_CbNAuxSZTFo.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79 
+    },
+    {
+     "image":"JTG - FE Home Assignment - Set 1/unsplash_Y6OgisiGBjM.png",
+        "name":"Home made pizza",
+        "price":190,
+        "Rating":4.7,
+        "min_time":50,
+        "max-time":79    
+    }
+]
+
+
+

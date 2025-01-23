@@ -1,0 +1,863 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+.ab{
+    background-color:#1AC073;
+    color: white;
+}
+/* Modal Container */
+.modal {
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px; /* Add padding to ensure footer is visible */
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-grow: 1; /* Allow main content to grow */
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e6a700;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Container Adjustment to Show Full Content */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center;
+    margin: 20px auto; /* Positions the container */
+    padding: 20px; /* Add padding */
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    height: auto; /* Ensure the height adjusts based on content */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.food-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-icon {
+    width: 20px; /* Adjust as needed */
+    height: 20px;
+}
+
+.add-to-cart {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Slick Carousel Styles */
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.slick-prev {
+    left: -50px; /* Adjust positioning as needed */
+}
+
+.slick-next {
+    right: -50px; /* Adjust positioning as needed */
+}
+
+.slick-prev img, .slick-next img {
+    width: 100%; /* Ensure the image fits the button */
+    height: auto;
+}
+
+.popular-items {
+    width: 80%; /* Adjust width to fit within the browser */
+    margin: 0 auto; /* Center align the container */
+}
+/* Attraction Section */
+.attraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text-content p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .controls img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .controls img#pause-btn {
+    display: none;
+  }
+
+/* Cart Modal */
+.cart-modal {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.modal-content img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content .back-to-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1AC073;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-content .back-to-menu:hover {
+    background-color: #159a58;
+}
+
+/* Popular Carousel Hover Effects */
+.popular-carousel .slick-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #1AC073; /* Set the hover color for arrows */
+}
+
+/* Request Modal Styles */
+.request-modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    width: 80%;
+    max-width: 700px;
+}
+
+.request-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background-color: white;
+    border: 2px solid #1AC073;
+    color: #1AC073;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #1AC073;
+    color: white;
+    border-radius: 5px;
+}
+
+.request-modal input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    }
+    
+    .request-modal {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+#home-kitchen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Optional background */
+    width: 100%;
+    max-width: 100%; /* Prevents any overflow */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    overflow: hidden; /* Prevents scrollbars */
+    white-space: nowrap; /* Prevents text wrapping */
+    text-overflow: ellipsis; /* Shows ellipsis if text overflows */
+}
+
+.home-kitchen-title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2; /* Adjusted for better readability */
+    text-align: center;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Modal Container */
+.modal {
+    background-color: #1AC073;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px; /* Add padding to ensure footer is visible */
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-grow: 1; /* Allow main content to grow */
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #FFC107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e6a700;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Container Adjustment to Show Full Content */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center;
+    margin: 20px auto; /* Positions the container */
+    padding: 20px; /* Add padding */
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    height: auto; /* Ensure the height adjusts based on content */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.food-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-icon {
+    width: 20px; /* Adjust as needed */
+    height: 20px;
+}
+
+.add-to-cart {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Slick Carousel Styles */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: white;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0056b3;
+}
+
+/* Attraction Section */
+.attraction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: auto;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+}
+
+.controls img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Cart Modal */
+.cart-modal {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.modal-content img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content .back-to-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1AC073;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-content .back-to-menu:hover {
+    background-color: #159a58;
+}
+
+/* Popular Carousel Hover Effects */
+.popular-carousel .slick-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #1AC073; /* Set the hover color for arrows */
+}
+
+/* Request Modal Styles */
+.request-modal {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    width: 80%;
+    max-width: 700px;
+}
+
+.request-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn, .submit-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background-color: white;
+    border: 2px solid #1AC073;
+    color: #1AC073;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #1AC073;
+    color: white;
+    border-radius: 5px;
+}
+
+.request-modal input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    }
+    
+    .request-modal {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+#home-kitchen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%; /* Prevents any overflow */
+    /* box-sizing: border-box; Ensures padding doesn't cause overflow */
+    overflow: hidden; /* Prevents scrollbars */
+    white-space: nowrap; /* Prevents text wrapping */
+    /* text-overflow: ellipsis; Shows ellipsis if text overflows */
+    background-color: white;
+    color: white;
+}
+
+.home-kitchen-title {
+    background-color: white;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2; /* Adjusted for better readability */
+    /* text-align: center; */
+    max-width: 100%;
+    word-wrap: break-word; /* Allows wrapping of the text if necessary */
+    margin: 20px; /* Removes default margin */
+    overflow: hidden; /* Hide overflow if text exceeds */
+    display: inline-block;
+    
+}}
+
+
+.jiya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    width: 50%;
+  }
+  
+  .form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-section input,
+  .form-section textarea {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-section button {
+    background-color: #00c853;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .image-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
