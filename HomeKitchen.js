@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".popular-items").slick({
                 slidesToShow: 3, // Show 3 slides at a time
                 slidesToScroll: 1, // Scroll one slide at a time
-                // autoplay: true,
+                autoplay: true,
                 autoplaySpeed: 2000,
                 arrows: true,
                 prevArrow: '<button type="button" class="slick-prev"><img src="JTG - FE Home Assignment - Set 1/Arrow-1.svg" alt="Previous"></button>',
@@ -133,6 +133,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target === cartModal) {
             cartModal.style.display = 'none';
         }
+    });
+    cartModal.querySelector('.back-to-menu').addEventListener('click', () => {
+        cartModal.style.display = 'none';
     });
 });
 
